@@ -1,11 +1,14 @@
 import React, { Fragment } from 'react';
-import { GlobalStyles, Calculator } from "./styles";
+import Calculator from "../Calculator/index";
+import { GlobalStyles, Wrapper } from "./styles";
 
 const App = () => {
   return (
     <Fragment>
       <GlobalStyles />
-      <h1>Hi!</h1>
+      <Wrapper>
+        <Calculator />
+      </Wrapper>
     </Fragment>
   )
 }

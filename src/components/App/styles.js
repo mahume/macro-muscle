@@ -7,14 +7,14 @@ export const GlobalStyles = createGlobalStyle`
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  body {
-    height: 100vh;
+`
+export const Wrapper = styled.main`
+  height: 100vh;
 
-    display: grid;
-    grid-template-columns: 1fr 60% 1fr;
-    grid-template-rows: 1fr 50% 1fr;
-    grid-template-areas: ".... .... ...."
-                         ".... calc ...."
-                         ".... .... ....";
-  }
+  display: grid;
+  grid-template-columns: 1fr 60% 1fr;
+  grid-template-rows: 1fr 50% 1fr;
+  grid-template-areas: ".... .... ...."
+                        ".... calc ...."
+                        ".... .... ....";
 `
