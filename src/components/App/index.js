@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { GlobalStyles } from "./styles";
 
 const App = () => {
   return (
-    <h1>Hi!</h1>
+    <>
+      <GlobalStyles />
+      <h1>Hi!</h1>
+    </>
   )
 }
 
