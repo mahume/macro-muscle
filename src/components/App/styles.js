@@ -12,9 +12,12 @@ export const Wrapper = styled.main`
   height: 100vh;
 
   display: grid;
-  grid-template-columns: 1fr 60% 1fr;
-  grid-template-rows: 1fr 50% 1fr;
-  grid-template-areas: ".... .... ...."
-                        ".... calc ...."
-                        ".... .... ....";
+  grid-template: ".... .... .... .... .... .... ...." 1fr
+                 ".... .... .... .... .... .... ...." 3vh
+                 ".... .... calc calc calc .... ...." 30vh
+                 ".... .... calc calc calc .... ...." 20vh
+                 ".... .... calc calc calc .... ...." 30vh
+                 ".... .... .... .... .... .... ...." 3vh
+                 ".... .... .... .... .... .... ...." 1fr
+                 / 1fr 2vw 20vw 20vw 20vw 2vw 1fr;
 `
