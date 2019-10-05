@@ -1,8 +1,8 @@
-const imperialToMetric = (inches, pounds) => {
-  return inches * 0.0254
-}
+const inchesToMeters = inches => inches * 0.0254;
 
-const bodyMassIndex = (height, weight) => weight / height**2;
+const poundsToKilograms = pounds => pounds * 0.45359237;
+
+const bodyMassIndex = (meters, kilograms) => kilograms / meters**2;
 
 const basalMetabolicRate = (isMale, kg, m, age) => {
   if (isMale) {
@@ -11,5 +11,6 @@ const basalMetabolicRate = (isMale, kg, m, age) => {
   return 655.1 + (4.35 * kg) + (4.7 * m) - (4.7 * age);
 }
 
-console.log(imperialToMetric(76.5));
 
+const myBMI = bodyMassIndex(inchesToMeters(77), poundsToKilograms(215))
+console.log(`My BMI: ${myBMI}`);
