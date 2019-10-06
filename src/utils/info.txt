@@ -1,0 +1,44 @@
+Body Types: 
+  Ectomorph
+    Lean & Long
+    Difficulty building muscle
+    55 carbs, 25 protein, 20 fat
+  Endomorph
+    Big
+    high body fat
+    pear shaped
+    Tendency to store body fat
+    25 carbs, 35 protein, 40 fat
+  Mesomorph
+    Muscular
+    Well-built
+    high metabolism
+    Responsive muscle cells
+    40 carbs, 30 protein, 30 fat
+
+Basal Metabolic Rate (BMR)
+  Harris-Benedict Equation
+  Calories just to keep you alive
+
+Thermic Effect of Food (TEF)
+  Energy required to digest Food
+  10% of Daily Energy Expenditure
+  Katch-McArdle Multipliers
+    Sedentary (little to no exercise + desk job) = 1.2
+    Lightly Active (light exercise 1-3 days/week) = 1.375
+    Moderately Active(moderate exercise 3-5 days/week) = 1.55
+    Very Active (heavy exercise 6-7 days / week ) = 1.725
+    Extremely Active (very heavy exercise, hard labor job, training 2x / day) = 1.9
+
+Non-Exercise Activity Thermogenesis (NEAT)
+  Daily calories based on movement. 
+  Job Types
+
+Thermic Effect of Activity (TEA)
+  calories burned from Exercise
+
+Total Daily Energy Expenditure
+  TDEE = BMR + TEF + NEAT + TEA
+
+Consume 200-300 above TDEE
+

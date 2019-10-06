@@ -1,23 +1,35 @@
 const inchesToCentimeters = inches => inches * 2.54;
 
-const poundsToKilograms = pounds => pounds * 0.453592;
+const poundsToKilograms = lbs => lbs * 0.453592;
 
-const bodyMassIndex = (centimeters, kilograms) => kilograms / (centimeters / 100)**2;
+// Body Mass Index
+const bMI = (cm, kg) => kg / (cm / 100)**2;
 
-const basalMetabolicRate = (isMale, centimeters, kilograms, yearsOld) => {
-  if (isMale) {
-    return 66.47 + (13.75 * kilograms) + (5.003 * centimeters) - (6.755 * yearsOld);
-  }
-  return 655.1 + (9.563 * kilograms) + (1.85 * centimeters) - (4.676 * yearsOld);
-}
-
-const calculateMacros = (dailyCalories, carbsPercentage, proteinPercentage, fatPercentage) => {
+const calculateMacros = (dailyCalories, carbsPct, proteinPct, fatPct) => {
   return {
-    totalCarbs: dailyCalories * (carbsPercentage / 100),
-    totalProtein: dailyCalories * (proteinPercentage / 100),
-    totalFat: dailyCalories * (fatPercentage / 100),
+    totalCarbs: dailyCalories * (carbsPct / 100),
+    totalProtein: dailyCalories * (proteinPct / 100),
+    totalFat: dailyCalories * (fatPct / 100),
   }
 }
+
+// Basal Metabolic Rate
+const bMR = (isMale, cm, kg, yearsOld) => {
+  if (isMale) return 66.47 + (13.75 * kg) + (5.003 * cm) - (6.755 * yearsOld);
+  return 655.1 + (9.563 * kg) + (1.85 * cm) - (4.676 * yearsOld);
+}
+
+// Thermic Effect of Food
+const tEF = () => {}
+
+// Non-Exercise Activity Thermogenesis
+const nEAT = () => {}
+
+// Thermic Effect of Activity
+const tEA = () => {}
+
+// Total Daily Energy Expenditure
+const tDEE = (bMR, tEF, nEAT, tEA) => {}
 
 const kilos = poundsToKilograms(215);
 const cm = inchesToCentimeters(77);
